@@ -1,0 +1,5 @@
+[wap]
+${YOUR_WAP_IPS}
+
+[jenkins]
+${YOUR_JENKINS_SERVER_IPS}

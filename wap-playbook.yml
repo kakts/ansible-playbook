@@ -1,0 +1,14 @@
+---
+- hosts: wap
+  remote_user: ak_ope
+  tasks:
+    - name: Installing apache httpd
+      yum: name=httpd state=installed
+      become: yes
+    - name: Create new folders
+      file:
+        path: ~/test-maek
+        owner: ak_ope
+        group: ak_ope
+        mode: 0644
+        state: directory
